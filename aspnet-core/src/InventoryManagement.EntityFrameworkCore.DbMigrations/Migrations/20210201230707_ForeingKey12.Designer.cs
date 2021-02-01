@@ -3,15 +3,17 @@ using System;
 using InventoryManagement.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 
 namespace InventoryManagement.Migrations
 {
     [DbContext(typeof(InventoryManagementMigrationsDbContext))]
-    partial class InventoryManagementMigrationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210201230707_ForeingKey12")]
+    partial class ForeingKey12
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

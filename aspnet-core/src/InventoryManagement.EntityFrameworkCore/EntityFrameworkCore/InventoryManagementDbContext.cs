@@ -5,6 +5,7 @@ using Volo.Abp.EntityFrameworkCore;
 using Volo.Abp.EntityFrameworkCore.Modeling;
 using Volo.Abp.Identity;
 using Volo.Abp.Users.EntityFrameworkCore;
+using InventoryManagement.Domain.Enumerations;
 
 namespace InventoryManagement.EntityFrameworkCore
 {
@@ -21,6 +22,7 @@ namespace InventoryManagement.EntityFrameworkCore
     public class InventoryManagementDbContext : AbpDbContext<InventoryManagementDbContext>
     {
         public DbSet<AppUser> Users { get; set; }
+        public DbSet<Enumeration> Enumerations { get; set; }
 
         /* Add DbSet properties for your Aggregate Roots / Entities here.
          * Also map them inside InventoryManagementDbContextModelCreatingExtensions.ConfigureInventoryManagement
@@ -41,7 +43,7 @@ namespace InventoryManagement.EntityFrameworkCore
             builder.Entity<AppUser>(b =>
             {
                 b.ToTable(AbpIdentityDbProperties.DbTablePrefix + "Users"); //Sharing the same table "AbpUsers" with the IdentityUser
-                
+
                 b.ConfigureByConvention();
                 b.ConfigureAbpUser();
 

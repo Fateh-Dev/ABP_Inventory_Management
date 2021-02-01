@@ -3,15 +3,17 @@ using System;
 using InventoryManagement.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Volo.Abp.EntityFrameworkCore;
 
 namespace InventoryManagement.Migrations
 {
     [DbContext(typeof(InventoryManagementMigrationsDbContext))]
-    partial class InventoryManagementMigrationsDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210201225923_InitialeCreate")]
+    partial class InitialeCreate
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -49,7 +51,7 @@ namespace InventoryManagement.Migrations
                         .HasColumnType("TEXT")
                         .HasColumnName("ExtraProperties");
 
-                    b.Property<Guid?>("IdParent")
+                    b.Property<string>("IdParent")
                         .HasColumnType("TEXT");
 
                     b.Property<DateTime?>("LastModificationTime")

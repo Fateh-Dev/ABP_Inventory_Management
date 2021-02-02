@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -13,14 +14,15 @@ export class AppComponent {
   showNavigation = true;
   panelOpenState = true;
   // tslint:disable-next-line: max-line-length
-  constructor(
+  constructor(public translate: TranslateService,
     private ref: ChangeDetectorRef,private http: HttpClient
   ) {}
   // tslint:disable-next-line: typedef
   openDrawer() {
     this.panelOpenState = !this.panelOpenState;
   }
-  changeDirection(dir: string) {
+  changeDirection(dir: string,language:string) {
+    this.translate.use(language);
     this.direction = dir;
     this.ref.detectChanges();
   }

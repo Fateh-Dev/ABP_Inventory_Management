@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Enumeration } from './Enumeration';
 import { EnumerationService } from './Enumeration.service';
 
 @Component({
@@ -7,8 +8,17 @@ import { EnumerationService } from './Enumeration.service';
   styleUrls: ['./enumeration.component.scss'],
 })
 export class EnumerationComponent implements OnInit {
-  constructor(private serviceEnum: EnumerationService) {}
-
+  constructor(public serviceEnum: EnumerationService) {}
+  createEnum:Enumeration={
+    'code':0,
+    'displayFr':'',
+    'idParent':'',
+    'value':''
+  };
+   
+  ajouterEnumeration(){
+    // this.serviceEnum.addEnum(this.createEnum).subscribe();
+    }
   ngOnInit(): void {
     this.serviceEnum.getEnums();
   }

@@ -7,7 +7,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './material-module';
 import { EnumerationComponent } from './enumeration/enumeration.component';
 import { I18nModule } from './i18n/i18n.module';
-
+import { FormsModule } from '@angular/forms';
+import { FlexLayoutModule } from '@angular/flex-layout';
 @NgModule({
   declarations: [AppComponent, EnumerationComponent],
   imports: [
@@ -17,6 +18,8 @@ import { I18nModule } from './i18n/i18n.module';
     BrowserAnimationsModule,
     MaterialModule,
     I18nModule,
+    FlexLayoutModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

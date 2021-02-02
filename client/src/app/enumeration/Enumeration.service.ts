@@ -9,10 +9,10 @@ export class EnumerationService {
   recievedEnumerations: any = {};
   constructor(private http: HttpClient) {}
 
+  // tslint:disable-next-line: typedef
   getEnums() {
-    return this.http
+     this.http
       .get(AppSettings.API_ENDPOINT + '/api/app/enumeration')
       .subscribe((e) => (this.recievedEnumerations = e));
   }
-  
 }

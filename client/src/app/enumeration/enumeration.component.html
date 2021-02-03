@@ -1,22 +1,24 @@
-<div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap='20px'>
+<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap='20px'>
     <mat-form-field appearance="outline">
-        <mat-label>Code</mat-label>
+        <mat-label>{{'code' | translate}}</mat-label>
         <input matInput [(ngModel)]="createEnum.code">
     </mat-form-field>
     <mat-form-field appearance="outline">
-        <mat-label>Value</mat-label>
+        <mat-label>{{'value' | translate}}</mat-label>
         <input matInput [(ngModel)]="createEnum.value">
     </mat-form-field>
     <mat-form-field appearance="outline">
-        <mat-label>Enumeration Parent</mat-label>
+        <mat-label>{{'idParent' | translate}}</mat-label>
         <input matInput [(ngModel)]="createEnum.idParent">
     </mat-form-field>
     <mat-form-field appearance="outline">
-        <mat-label>DisplayFr</mat-label>
+        <mat-label>{{'display' | translate}}</mat-label>
         <input matInput [(ngModel)]="createEnum.displayFr">
     </mat-form-field>
     <br>
-    <button mat-raised-button color='primary' (click)="ajouterEnumeration()">ajouter un article</button>
+    <button mat-raised-button color='primary' (click)="ajouterEnumeration()">{{'addArticle' | translate}}</button>
 </div>
+
+<app-data-table></app-data-table>
 <pre>{{createEnum|json}}</pre>
 <pre>{{serviceEnum.recievedEnumerations|json}}</pre>

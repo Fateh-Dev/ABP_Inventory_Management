@@ -20,6 +20,6 @@ export class EnumerationComponent implements OnInit {
     // this.serviceEnum.addEnum(this.createEnum).subscribe();
     }
   ngOnInit(): void {
-    this.serviceEnum.getEnums();
+    console.log(this.serviceEnum.getEnums());
   }
 }

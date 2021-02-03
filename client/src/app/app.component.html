@@ -4,10 +4,22 @@
       <mat-divider>
       </mat-divider>
       <mat-selection-list [multiple]="false">
-          <mat-list-option routerLink="/enums">
-              <div>{{'enumeration' | translate}}</div>
-              <mat-icon mat-list-icon>settings</mat-icon>
-          </mat-list-option>
+        <mat-list-option routerLink="/home">
+            <div>{{'home' | translate}}</div>
+            <mat-icon mat-list-icon>home</mat-icon>
+        </mat-list-option>
+        <mat-list-option routerLink="/enums">
+            <div>{{'enumeration' | translate}}</div>
+            <mat-icon mat-list-icon>settings</mat-icon>
+        </mat-list-option>
+        <mat-list-option routerLink="/parametre">
+            <div>{{'parametre' | translate}}</div>
+            <mat-icon mat-list-icon>settings</mat-icon>
+        </mat-list-option>
+        <mat-list-option routerLink="/about">
+            <div>{{'about' | translate}}</div>
+            <mat-icon mat-list-icon>info</mat-icon>
+        </mat-list-option>
       </mat-selection-list>
   </mat-drawer>
   <div id="rootContent">
@@ -42,7 +54,7 @@
 
           </mat-toolbar-row>
       </mat-toolbar>
-      <div>
+      <div >
           <router-outlet></router-outlet>
       </div>
   </div>

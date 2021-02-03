@@ -1,4 +1,7 @@
-﻿using InventoryManagement.Localization;
+﻿using System.Collections.Generic;
+using InventoryManagement.Application.Contracts.Enumerations;
+using InventoryManagement.Localization;
+using Microsoft.AspNetCore.Mvc;
 using Volo.Abp.AspNetCore.Mvc;
 
 namespace InventoryManagement.Controllers
@@ -10,6 +13,12 @@ namespace InventoryManagement.Controllers
         protected InventoryManagementController()
         {
             LocalizationResource = typeof(InventoryManagementResource);
+        }
+
+        [HttpGet]
+        public ActionResult<IEnumerable<EnumerationDto>> GetAllEnumerations()
+        {
+            return Ok();
         }
     }
 }

@@ -1,4 +1,14 @@
 {
     "titreProject":"Project Title",
-    "enumeration":"Enumerations"
+    "enumeration":"Enumerations",
+    "parametre":"Settings",
+    "about":"About",
+    "home":"Home",
+    "addArticle":"Add New Article",
+    "display":"Description",
+    "value":"Value",
+    "idParent":" Parent ",
+    "code":"Code",
+    "filter":"Filter",
+    "noData":"No data matching the filter :"
   }

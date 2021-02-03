@@ -9,8 +9,16 @@ import { EnumerationComponent } from './enumeration/enumeration.component';
 import { I18nModule } from './i18n/i18n.module';
 import { FormsModule } from '@angular/forms';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { CookieService } from 'ngx-cookie-service';
+import { CustomPaginator, DataTableComponent } from './SharedComponents/data-table/data-table.component';
+import { MatPaginatorIntl } from '@angular/material/paginator';
+import { HomePageComponent } from './home-page/home-page.component';
+import { AboutComponent } from './about/about.component';
+import { ParametreComponent } from './parametre/parametre.component';
+import { DataSummaryComponent } from './SharedComponents/data-summary/data-summary.component';
+
 @NgModule({
-  declarations: [AppComponent, EnumerationComponent],
+  declarations: [AppComponent, EnumerationComponent, DataTableComponent, HomePageComponent, AboutComponent, ParametreComponent, DataSummaryComponent],
   imports: [
     HttpClientModule,
     BrowserModule,
@@ -21,7 +29,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     FlexLayoutModule,
     FormsModule,
   ],
-  providers: [],
+  providers: [CookieService,{ provide: MatPaginatorIntl, useValue: CustomPaginator() }],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

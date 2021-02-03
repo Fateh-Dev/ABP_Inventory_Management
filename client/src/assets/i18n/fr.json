@@ -1,4 +1,15 @@
 {
     "titreProject":"Titre de projet",
-    "enumeration":"Enumerations"
+    "enumeration":"Enumerations",
+    "parametre":"Parametre",
+    "about":"A propos",
+    "home":"Accueil",
+    "addArticle":"Ajouter un article",
+    "display":"Description",
+    "value":"Valeur",
+    "idParent":"Parent ",
+    "code":"Code",
+    "filter":"Filtre",
+    "noData":"Pas de donnees a afficher pour le filter :"
+    
   }

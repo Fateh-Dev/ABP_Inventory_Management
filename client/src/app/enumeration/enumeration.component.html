@@ -1,22 +1,22 @@
-<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap='20px'>
-    <mat-form-field appearance="outline">
+<div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap='20px' class="spacing">
+    <mat-form-field fxFlex appearance="outline">
         <mat-label>{{'code' | translate}}</mat-label>
         <input matInput [(ngModel)]="createEnum.code">
     </mat-form-field>
-    <mat-form-field appearance="outline">
+    <mat-form-field fxFlex appearance="outline">
         <mat-label>{{'value' | translate}}</mat-label>
         <input matInput [(ngModel)]="createEnum.value">
     </mat-form-field>
-    <mat-form-field appearance="outline">
+    <mat-form-field fxFlex appearance="outline">
         <mat-label>{{'idParent' | translate}}</mat-label>
         <input matInput [(ngModel)]="createEnum.idParent">
     </mat-form-field>
-    <mat-form-field appearance="outline">
+    <mat-form-field fxFlex appearance="outline">
         <mat-label>{{'display' | translate}}</mat-label>
         <input matInput [(ngModel)]="createEnum.displayFr">
-    </mat-form-field>
-    <br>
-    <button mat-raised-button color='primary' (click)="ajouterEnumeration()">{{'addArticle' | translate}}</button>
+    </mat-form-field> 
+    <button fxFlex="10" style="width: 100%;padding: 6px ;margin-right: 5px;" mat-raised-button color='primary'
+        (click)="ajouterEnumeration()">{{'addArticle' | translate}}</button>
 </div>
 
 <app-data-table></app-data-table>

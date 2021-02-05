@@ -16,9 +16,11 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { AboutComponent } from './about/about.component';
 import { ParametreComponent } from './parametre/parametre.component';
 import { DataSummaryComponent } from './SharedComponents/data-summary/data-summary.component';
+import { DataSummaryHeaderComponent } from './SharedComponents/data-summary-header/data-summary-header.component';
+import { DataListeHeaderComponent } from './SharedComponents/data-liste-header/data-liste-header.component';
 
 @NgModule({
-  declarations: [AppComponent, EnumerationComponent, DataTableComponent, HomePageComponent, AboutComponent, ParametreComponent, DataSummaryComponent],
+  declarations: [AppComponent, EnumerationComponent, DataTableComponent, HomePageComponent, AboutComponent, ParametreComponent, DataSummaryComponent, DataSummaryHeaderComponent, DataListeHeaderComponent],
   imports: [
     HttpClientModule,
     BrowserModule,

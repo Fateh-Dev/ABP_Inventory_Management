@@ -72,8 +72,26 @@
           </button> 
         </mat-toolbar-row>
     </mat-toolbar>
-    <div fxLayout="column" fxLayoutAlign="space-between center" style="padding: 20px;padding-bottom: 10px;">
-    Hello World</div>
+    <div fxLayout="row" fxLayoutAlign="space-around center" fxLayoutGap='20px' class="spacing">
+        <mat-form-field fxFlex appearance="outline">
+            <mat-label>{{'code' | translate}}</mat-label>
+            <input matInput >
+        </mat-form-field>
+        <mat-form-field fxFlex appearance="outline">
+            <mat-label>{{'value' | translate}}</mat-label>
+            <input matInput >
+        </mat-form-field>
+        <mat-form-field fxFlex appearance="outline">
+            <mat-label>{{'idParent' | translate}}</mat-label>
+            <input matInput>
+        </mat-form-field>
+        <mat-form-field fxFlex appearance="outline">
+            <mat-label>{{'display' | translate}}</mat-label>
+            <input matInput >
+        </mat-form-field> 
+        <button fxFlex="10" style="width: 100%;padding: 6px ;margin-right: 5px;" mat-raised-button color='primary'
+            >{{'addArticle' | translate}}</button>
+    </div>
     <!-- <app-articles [item]="data">
     </app-articles> -->
 </ng-template>

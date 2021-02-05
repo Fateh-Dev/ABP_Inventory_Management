@@ -10,6 +10,8 @@
     "idParent":"Parent ",
     "code":"Code",
     "filter":"Filtre",
-    "noData":"Pas de donnees a afficher pour le filter :"
+    "noData":"Pas de donnees a afficher pour le filter :",
+    "dir":"ltr",
+    "info":"info"
     
   }

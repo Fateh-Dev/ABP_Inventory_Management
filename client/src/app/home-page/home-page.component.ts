@@ -12,11 +12,11 @@ export interface UserData {
   styleUrls: ['./home-page.component.scss']
 })
 export class HomePageComponent implements OnInit {
-  displayedCol:string[]=[];
-  data:MatTableDataSource<any[]>=new MatTableDataSource();
+  // displayedCol: string[] = [];
+  // data: MatTableDataSource<any> = new MatTableDataSource();
   constructor() { }
-
   ngOnInit(): void {
+    
   }
 
 }

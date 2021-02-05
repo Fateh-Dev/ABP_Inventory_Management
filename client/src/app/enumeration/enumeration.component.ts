@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 import { Enumeration } from './Enumeration';
 import { EnumerationService } from './Enumeration.service';
 
@@ -6,20 +6,19 @@ import { EnumerationService } from './Enumeration.service';
   selector: 'app-enumeration',
   templateUrl: './enumeration.component.html',
   styleUrls: ['./enumeration.component.scss'],
+  encapsulation: ViewEncapsulation.None,
 })
 export class EnumerationComponent implements OnInit {
   constructor(public serviceEnum: EnumerationService) {}
-  createEnum:Enumeration={
-    'code':0,
-    'displayFr':'',
-    'idParent':'',
-    'value':''
+  createEnum: Enumeration = {
+    code: 0,
+    displayFr: '',
+    idParent: '',
+    value: '',
   };
-   
-  ajouterEnumeration(){
+  enumListe: Enumeration[] = [];
+  ajouterEnumeration() {
     // this.serviceEnum.addEnum(this.createEnum).subscribe();
-    }
-  ngOnInit(): void {
-    console.log(this.serviceEnum.getEnums());
   }
+  ngOnInit(): void {}
 }

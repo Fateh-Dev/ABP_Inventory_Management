@@ -11,7 +11,7 @@ import { CookieService } from 'ngx-cookie-service';
 })
 export class AppComponent {
   title = 'Project Title';
-  direction: any;
+  public direction: any;
   showNavigation = true;
   panelOpenState = true;
   // tslint:disable-next-line: max-line-length

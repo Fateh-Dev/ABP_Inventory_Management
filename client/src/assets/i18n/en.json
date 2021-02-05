@@ -10,5 +10,7 @@
     "idParent":" Parent ",
     "code":"Code",
     "filter":"Filter",
-    "noData":"No data matching the filter :"
+    "noData":"No data matching the filter :",
+    "dir":"ltr",
+    "info":"info"
   }

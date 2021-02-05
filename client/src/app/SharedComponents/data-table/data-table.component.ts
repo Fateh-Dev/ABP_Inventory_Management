@@ -77,7 +77,7 @@ export class DataTableComponent implements AfterViewInit  {
     const dialogRef = this.dialog.open(this.template, {
       width: '250px',
       data: {},
-      minWidth: '70vw',
+      minWidth: '90vw',
       maxHeight: '80vh',
       disableClose: true,
       panelClass: 'custom-dialog-container',

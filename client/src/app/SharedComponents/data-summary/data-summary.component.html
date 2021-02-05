@@ -1,43 +1,47 @@
-<div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap="10px" style="padding: 15px;">
-    <div fxFlex="25%" fxFlexFill>
+<div fxLayout="row" fxLayout.sm="column" fxLayout.xs="column" fxLayoutWrap fxLayoutAlign="space-between center"
+    fxLayoutGap="10px" style="padding: 10px 3px;">
+    <div fxFlex="0 1 calc(25% )" fxFlex.lt-md="0 1 calc(50% )" fxFlex.lt-sm="100%" fxFlexFill>
         <div fxLayout="row" fxLayoutAlign="space-around center">
-            <mat-card class="leftEdgeStyle" fxFlex="80">
+            <mat-card [ngClass]="(('dir' | translate) === 'rtl')?'rightEdgeStyle':'leftEdgeStyle'" fxFlex="80">
                 <mat-card-header>
-                    <mat-card-title style="font-size: large;">Evenements Aerien</mat-card-title>
+                    <mat-card-title style="font-size: large;">{{'info'|translate}}</mat-card-title>
                     <mat-card-subtitle>subtitle</mat-card-subtitle>
                 </mat-card-header>
             </mat-card>
-            <mat-card class="leftEdge" fxFlex="20" fxFlexAlign="stretch">
+            <mat-card [ngClass]="(('dir' | translate) === 'rtl')?'rightEdge':'leftEdge'" fxFlex="20"
+                fxFlexAlign="stretch">
                 <mat-card-content>
                     <h1>00</h1>
                 </mat-card-content>
             </mat-card>
         </div>
     </div>
-    <div fxFlex="25%" fxFlexFill>
+    <div fxFlex="0 1 calc(25% - 0.5%)" fxFlex.lt-md="0 1 calc(50% - 0.5%)" fxFlex.lt-sm="100%" fxFlexFill>
         <div fxLayout="row" fxLayoutAlign="space-between center">
-            <mat-card class="leftEdgeStyle" fxFlex="80">
+            <mat-card [ngClass]="(('dir' | translate) === 'rtl')?'rightEdgeStyle':'leftEdgeStyle'" fxFlex="80">
                 <mat-card-header>
-                    <mat-card-title style="font-size: large;">Accident Aerien</mat-card-title>
+                    <mat-card-title style="font-size: large;">{{'info'|translate}}</mat-card-title>
                     <mat-card-subtitle>subtitle</mat-card-subtitle>
                 </mat-card-header>
             </mat-card>
-            <mat-card class="leftEdge" fxFlex="20" fxFlexAlign="stretch">
+            <mat-card [ngClass]="(('dir' | translate) === 'rtl')?'rightEdge':'leftEdge'" fxFlex="20"
+                fxFlexAlign="stretch">
                 <mat-card-content>
                     <h1>00</h1>
                 </mat-card-content>
             </mat-card>
         </div>
     </div>
-    <div fxFlex="25%" fxFlexFill>
+    <div fxFlex="0 1 calc(25% - 0.5%)" fxFlex.lt-md="0 1 calc(50% - 0.5%)" fxFlex.lt-sm="100%" fxFlexFill>
         <div fxLayout="row" fxLayoutAlign="space-around center">
-            <mat-card class="leftEdgeStyle" fxFlex="80">
+            <mat-card [ngClass]="(('dir' | translate) === 'rtl')?'rightEdgeStyle':'leftEdgeStyle'" fxFlex="80">
                 <mat-card-header>
-                    <mat-card-title style="font-size: large;">Incident Aerien Grave</mat-card-title>
+                    <mat-card-title style="font-size: large;">{{'info'|translate}}</mat-card-title>
                     <mat-card-subtitle>subtitle</mat-card-subtitle>
                 </mat-card-header>
             </mat-card>
-            <mat-card class="leftEdge" fxFlex="20" fxFlexAlign="stretch">
+            <mat-card [ngClass]="(('dir' | translate) === 'rtl')?'rightEdge':'leftEdge'" fxFlex="20"
+                fxFlexAlign="stretch">
                 <mat-card-content>
                     <h1>00</h1>
                 </mat-card-content>
@@ -45,15 +49,17 @@
         </div>
     </div>
 
-    <div fxFlex="25%" fxFlexFill>
+    <div fxFlex="0 1 calc(25% - 0.5%)" fxFlex.lt-md="0 1 calc(50% - 0.5%)" fxFlex.lt-sm="100%" fxFlexFill>
         <div fxLayout="row" fxLayoutAlign="space-around center">
-            <mat-card class="leftEdgeStyle" fxFlex="80">
+            <mat-card 
+                [ngClass]="(('dir' | translate) === 'rtl')?'rightEdgeStyle':'leftEdgeStyle'" fxFlex="80">
                 <mat-card-header>
-                    <mat-card-title style="font-size: large;">Incident Aerien Leger</mat-card-title>
+                    <mat-card-title style="font-size: large;">{{'info'|translate}}</mat-card-title>
                     <mat-card-subtitle>subtitle</mat-card-subtitle>
                 </mat-card-header>
             </mat-card>
-            <mat-card class="leftEdge" fxFlex="20" fxFlexAlign="stretch">
+            <mat-card  [ngClass]="(('dir' | translate) === 'rtl')?'rightEdge':'leftEdge'"
+                fxFlex="20" fxFlexAlign="stretch">
                 <mat-card-content>
                     <h1>00</h1>
                 </mat-card-content>

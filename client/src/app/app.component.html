@@ -2,7 +2,7 @@
     <mat-drawer #drawer class="sidenav" mode="over">
         <div class="example-card " fxLayout="column" fxLayoutAlign="space-around center">
             <div fxFlex><img mat-card-avatar class="example-header-image mat-card-avatar-big"></div>
-            <h3 fxFlex style="color: white;">Administrateur</h3>
+            <h3 fxFlex style="color: white;">{{'user'|translate}}</h3>
         </div>
         <mat-divider>
         </mat-divider>
@@ -55,7 +55,7 @@
                     <mat-icon>account_circle</mat-icon>
                 </button> -->
                 <span class="spacing"></span>
-                <div fxFlexAlign="end" >
+                <div fxFlexAlign="end">
                     <img [matMenuTriggerFor]="profil" mat-card-avatar
                         class="example-header-image mat-card-avatar-small">
                 </div>
@@ -70,13 +70,13 @@
                 </mat-menu>
                 <mat-menu #profil="matMenu">
                     <button mat-menu-item>
-                        <mat-icon>assignment_ind</mat-icon>Profile
+                        <mat-icon>assignment_ind</mat-icon>{{'profile'|translate}}
                     </button>
                     <button mat-menu-item>
-                        <mat-icon>lock</mat-icon>Lock
+                        <mat-icon>lock</mat-icon>{{'lock'|translate}}
                     </button>
                     <button mat-menu-item>
-                        <mat-icon>power_settings_new</mat-icon>Se deconnecter
+                        <mat-icon>power_settings_new</mat-icon>{{'disconnect'|translate}}
                     </button>
                 </mat-menu>
 

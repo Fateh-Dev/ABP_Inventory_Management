@@ -1,7 +1,7 @@
 .example-spacer {
   flex: 1 1 auto;
 }
-.spacing{
+.spacing {
   padding: 0px 10px 0px 10px;
 }
 .drawer-container {
@@ -47,20 +47,20 @@ mat-drawer {
   border: 2px solid white;
   height: 30px;
   width: 30px;
+  cursor: pointer;
 }
 .mat-card-avatar {
- 
 }
 
-.mat-card-avatar-big{
+.mat-card-avatar-big {
   height: 80px;
   width: 80px;
   margin: 10px;
 }
 
-.notificationDiv{
-min-width: 400px;
-min-height: 150px;
+.notificationDiv {
+  min-width: 400px;
+  min-height: 150px;
 }
 
 ::ng-deep.mat-menu-panel {

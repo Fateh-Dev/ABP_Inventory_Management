@@ -13,6 +13,6 @@ export class DataListeHeaderComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    this.items = { title: 'fateh', data: ['teste', 'tetetetet', 'tetetet'] };
+    this.items = { title: 'info', data: ['info', 'info', 'info'] };
   }
 }

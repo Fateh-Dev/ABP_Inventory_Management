@@ -17,10 +17,10 @@ export class DataSummaryHeaderComponent implements OnInit {
 
   ngOnInit(): void {
     this.items=[
-      {title:'fateh',data:'teste',summary:'teste'},
-      {title:'fateh',data:'fateh',summary:'teste'},
-      {title:'fateh',data:'teste',summary:'fateh'},
-      {title:'fateh',data:'teste',summary:'teste'},
+      {title:'info',data:'info',summary:'info'},
+      {title:'info',data:'info',summary:'info'},
+      {title:'info',data:'info',summary:'info'},
+      {title:'info',data:'info',summary:'info'},
     ]
   }
 

@@ -1,7 +1,7 @@
 <mat-drawer-container class="drawer-container" [hasBackdrop]="true" [dir]='direction'>
     <mat-drawer #drawer class="sidenav" mode="over">
         <div class="example-card " fxLayout="column" fxLayoutAlign="space-around center">
-            <div fxFlex><img mat-card-avatar class="example-header-image mat-card-avatar-big"></div>
+            <mat-card style="background: none;"><img mat-card-avatar class="mat-card-avatar-big"></mat-card>
             <h3 fxFlex style="color: white;">{{'user'|translate}}</h3>
         </div>
         <mat-divider>
@@ -57,7 +57,7 @@
                 <span class="spacing"></span>
                 <div fxFlexAlign="end">
                     <img [matMenuTriggerFor]="profil" mat-card-avatar
-                        class="example-header-image mat-card-avatar-small">
+                        class=" mat-card-avatar-small">
                 </div>
 
                 <mat-menu #menu="matMenu">

@@ -36,26 +36,23 @@ mat-drawer {
   justify-content: center;
 }
 
-.example-header-image {
-  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
-  background-size: cover;
-  border: 4px solid white;
-}
 .mat-card-avatar-small {
-  background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+  background-image: url("../assets/images/user.png");
   background-size: cover;
   border: 2px solid white;
   height: 30px;
   width: 30px;
   cursor: pointer;
 }
-.mat-card-avatar {
-}
 
 .mat-card-avatar-big {
+  background-image: url("../assets/images/user.png");
+  background-size: cover;
+  border: 4px solid white;
   height: 80px;
   width: 80px;
   margin: 10px;
+  background-color: white;
 }
 
 .notificationDiv {
@@ -65,4 +62,7 @@ mat-drawer {
 
 ::ng-deep.mat-menu-panel {
   max-width: none !important;
+}
+.mat-card {
+  box-shadow: 0px 2px 1px -1px rgb(0 0 0 / 0%), 0px 1px 1px 0px rgb(0 0 0 / 0%), 0px 1px 3px 0px rgb(0 0 0 / 0%);
 }
